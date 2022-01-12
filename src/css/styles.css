@@ -14,12 +14,22 @@ body {
 
 img {
   max-width: 100%;
-  height: 170px;
+  height: 175px;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
 .search-form {
   text-align: center;
   padding-top: 10px;
@@ -41,12 +51,16 @@ button {
   margin-bottom: 10px;
 }
 
-.photo-card {
+.item {
   margin: 10px;
   max-width: calc((100% - 8 * 10px) / 4);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   flex-grow: 1;
+}
+
+.photo-card {
+  width: 100%;
 }
 
 .info {
@@ -58,6 +72,7 @@ button {
 
 .info-item {
   margin: 0;
+  color: #212121;
 }
 
 .load-more-btn {
